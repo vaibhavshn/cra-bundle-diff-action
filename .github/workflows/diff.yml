@@ -79,7 +79,7 @@ jobs:
     - name: Comment
       uses: NejcZdovc/comment-pr@v1
       with:
-        file: 'comment.md'
+        file: 'diff_comment.md'
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         OLD: ${{steps.get-diff.outputs.base_file_string}}
